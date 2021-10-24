@@ -7,6 +7,7 @@ import {
   PaperAirplaneIcon,
   MenuIcon,
 } from "@heroicons/react/outline";
+import { HomeIcon } from "@heroicons/react/solid";
 
 const Header = () => {
   return (
@@ -18,13 +19,15 @@ const Header = () => {
             src="https://links.papareact.com/ocw"
             layout="fill"
             objectFit="contain"
+            alt="pinsta"
           />
         </div>
-        <div className="relative lg:hidden h-10 w-10 flex-shrink-0 cursor-pointer">
+        <div className="relative lg:hidden w-10 flex-shrink-0 cursor-pointer">
           <Image
             src="https://links.papareact.com/jjm"
             layout="fill"
             objectFit="contain"
+            alt="pinsta"
           />
         </div>
 
@@ -41,6 +44,9 @@ const Header = () => {
             />
           </div>
         </div>
+
+        {/* Right */}
+        <HomeIcon className="h-10 w-10" />
       </div>
     </div>
   );
